@@ -1,0 +1,9 @@
+@import '../../assets/colors.css';
+
+.Header {
+    background: var(--extra-light-gray);
+}
+
+.title {
+    color: var(--blue);
+}
