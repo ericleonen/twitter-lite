@@ -1,9 +1,13 @@
 @import '../../assets/colors.css';
 
 .Header {
-    background: var(--extra-light-gray);
+    background: white;
+    box-shadow: 1.5px 0px 5px var(--gray);
+    padding: 10px;
 }
 
 .title {
     color: var(--blue);
+    font-size: 2em;
+    text-align: center;
 }
