@@ -8,4 +8,5 @@
 
 body {
   background-color: var(--extra-light-gray);
+  color: var(--black);
 }

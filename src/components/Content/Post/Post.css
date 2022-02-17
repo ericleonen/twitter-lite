@@ -1,2 +1,76 @@
 @import '../../../assets/colors.css';
 
+.Post {
+    background: white;
+    padding: 20px;
+    box-shadow: 1.5px 0px 5px var(--gray);
+    display: flex;
+    flex-flow: row;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.post-main {
+    padding-left: 7px;
+    width: 100%;
+}
+
+
+.post-header {
+    display: flex;
+}
+
+.profile-pic {
+    height: 60px;
+    border-radius: 50%;
+
+}
+
+.user-container {
+    display: flex;
+    align-items: flex-end;
+    height: 1.1em;
+    margin-top: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.user-handle {
+    color: var(--dark-gray);
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.post-body {
+    margin-top: 10px;
+}
+
+.post-footer {
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.post-footer button {
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    display: flex;
+    color: var(--gray);
+}
+
+.post-footer button span {
+    margin-left: 5px;
+    color: var(--dark-gray)
+}
+
+.remove-btn:hover {
+    color: red;
+}

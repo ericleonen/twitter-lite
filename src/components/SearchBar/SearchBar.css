@@ -1,0 +1,48 @@
+@import '../../assets/colors.css';
+
+form {
+    display: flex;
+    margin: 120px auto;
+    margin-bottom: 60px;
+    width: 40vw;
+    box-sizing: content-box;
+    align-items: center;
+    height: 3em;
+}
+
+#textbox {
+    font-size: 1.3em;
+    border: none;
+    width: 100%;
+    box-shadow: 2px 2px 3px var(--gray);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    color: var(--gray);
+    padding: 0 10px;
+    text-align: center;
+}
+
+#textbox::placeholder {
+    color: var(--gray);
+}
+
+#textbox:focus {
+    border: none;
+    outline: none;
+}
+
+#submit-btn {
+    padding: 10px;
+    box-shadow: 1px 2px 3px var(--gray);
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background: var(--blue);
+    color: white;
+    height: 100%;
+    width: 5em;
+    font-size: 1.1em;
+}
+
+#submit-btn:hover {
+    background: #0c85d0;
+}
