@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const path = require('path');
+
 app.use(cors({
     origin: '*'
 }));
@@ -12,7 +14,9 @@ const bearer = 'AAAAAAAAAAAAAAAAAAAAAB33YwEAAAAAuho27ohqPlhzqCJzyEHuRx0o%2FRY%3D
 const twitterClient = new TwitterApi(bearer);
 const roClient = twitterClient.readOnly;
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.get('/', (req, res, next) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+})
 
 app.get('/tweets', async (req, res, next) => {
 
@@ -27,3 +31,5 @@ app.get('/tweets', async (req, res, next) => {
     
     res.send(data);
 });
+
+app.listen(port, () => console.log(`Listening on port ${port}`));
